@@ -7,8 +7,10 @@ pageInfo:
     - title: Documentation
       path: https://dashy.to/docs
 appConfig:
-  theme: cherry-blossom
+  theme: one-dark
   language: en
+  layout: auto
+  iconSize: medium
 sections:
   - name: Getting Started
     icon: fas fa-rocket
@@ -58,16 +60,45 @@ sections:
       - *ref_3
       - *ref_4
       - *ref_5
-  - name: Test
+  - name: Favorites
     displayData:
-      sortBy: default
-      rows: 1
+      sortBy: most-used
+      rows: 5
       cols: 1
       collapsed: false
       hideForGuests: false
     items:
       - &ref_6
-        title: Test1
-        id: 0_416_test
+        title: ChatGPT
+        description: Assistance by AI powered chat.
+        icon: https://raw.githubusercontent.com/ssaenen/dashy/master/chatgpt.ico
+        url: https://chat.openai.com/
+        target: newtab
+        id: 0_947_chatgpt
+      - &ref_7
+        title: Football Highlights
+        description: Highlights and full matches.
+        icon: >-
+          https://raw.githubusercontent.com/ssaenen/dashy/master/reddit_footballhighlights.ico
+        url: https://www.reddit.com/r/footballhighlights/
+        target: newtab
+        id: 1_947_footballhighlights
+      - &ref_8
+        title: Proton Mail
+        description: E-mail service.
+        icon: https://raw.githubusercontent.com/ssaenen/dashy/master/protonmail.ico
+        url: https://mail.proton.me/
+        target: newtab
+        id: 2_947_protonmail
+      - &ref_9
+        title: Youtube
+        description: Video sharing and social media platform.
+        icon: https://raw.githubusercontent.com/ssaenen/dashy/master/youtube.ico
+        url: https://www.youtube.com/index
+        target: newtab
+        id: 3_947_youtube
     filteredItems:
       - *ref_6
+      - *ref_7
+      - *ref_8
+      - *ref_9
