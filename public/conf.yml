@@ -114,10 +114,11 @@ sections:
       cols: 1
       collapsed: false
       hideForGuests: false
-    items: []
+    items:
+      - type: clock
+        options:
+          timeZone: Europe/London
+          format: en-GB
+          hideDate: false
     filteredItems: []
-  - type: clock
-    options:
-      timeZone: Europe/Brussels
-      format: en-GB
-      hideDate: false
+
