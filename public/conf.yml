@@ -114,4 +114,10 @@ sections:
       options:
         timeZone: Europe/Brussels
         format: en-GB
+  - name: Github Trending
+    widgets:
+    - type: github-trending-repos
+      options:
+        limit: 10
+        since: daily
 
