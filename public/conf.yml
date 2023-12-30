@@ -1,16 +1,21 @@
 pageInfo:
-  title: Dashy
-  description: Welcome to your new dashboard!
+  title: Saenen's Lounge
+  description: >-
+    Welcome to your one-stop Link Lounge! A curated collection of your favorite
+    shortcuts, where every click leads to a new adventure.
   navLinks:
     - title: GitHub
       path: https://github.com/Lissy93/dashy
+      target: newtab
     - title: Documentation
       path: https://dashy.to/docs
+      target: newtab
+  logo: https://raw.githubusercontent.com/ssaenen/dashy/master/web.ico
 appConfig:
-  theme: one-dark
+  theme: colorful
   language: en
   layout: auto
-  iconSize: medium
+  iconSize: large
 sections:
   - name: Getting Started
     icon: fas fa-rocket
@@ -102,3 +107,17 @@ sections:
       - *ref_7
       - *ref_8
       - *ref_9
+  - name: Test
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+    items: []
+    filteredItems: []
+  - type: clock
+    options:
+      timeZone: Europe/Brussels
+      format: en-GB
+      hideDate: false
