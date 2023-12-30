@@ -107,11 +107,11 @@ sections:
       - *ref_7
       - *ref_8
       - *ref_9
-  - name: International Time
+  - name: Today
     icon: fad fa-clock
     widgets:
     - type: clock
       options:
-        timeZone: Europe/London
+        timeZone: Europe/Brussels
         format: en-GB
 
