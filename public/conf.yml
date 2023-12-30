@@ -107,18 +107,11 @@ sections:
       - *ref_7
       - *ref_8
       - *ref_9
-  - name: Test
-    displayData:
-      sortBy: default
-      rows: 1
-      cols: 1
-      collapsed: false
-      hideForGuests: false
-    items:
-      - type: clock
-        options:
-          timeZone: Europe/London
-          format: en-GB
-          hideDate: false
-    filteredItems: []
+  - name: International Time
+    icon: fad fa-clock
+    widgets:
+    - type: clock
+      options:
+        timeZone: Europe/London
+        format: en-GB
 
